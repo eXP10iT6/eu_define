@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE settings [
+<!ENTITY eu-host "https://eu.bmstu.ru">
+<!ENTITY workflow-host "http://workflow.eu.bmstu.ru">
+<!ENTITY workflow3-host "http://wf4.eu.bmstu.ru">
+<!ENTITY pg-host "172.16.10.20">
+<!ENTITY pg-port "5432">
+<!ENTITY pg-user "eu_user">
+<!ENTITY pg-password "">
+]>
+<settings>
+  <define name="LIB_DIR" value="/var/www/eu2/admin/lib/"/>
+  <define name="USERFILES_URL" value="/UserFiles/"/>
+  <define name="USERFILES_DIR" value="/var/www/eu2/UserFiles"/>
+  <define name="URLPREFIX" value=""/>
+  <define name="CSS_URL" value="/./common/style.css"/>
+  <define name="AUTH_SERVICE" value="https://dev.eu.bmstu.ru/auth"/>
+  <define name="IDENTITY_SERVICE" value="https://portal3.dev.eu.bmstu.ru/id/"/>
+  <define name="PDF_GENERATOR_URL" value="http://exist.dev.eu.bmstu.ru:8080/exist/rest/pdfGenerator/g"/>
+  <define name="PORTAL3_URL" value="https://portal3.dev.eu.bmstu.ru/portal3/"/>
+  <define name="PERMISSION_SERVICE_URL" value="https://portal3.dev.eu.bmstu.ru/id/"/>
+  <define name="PORTAL3_COOKIE_PUBLICKEY" value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyNutwPM0m9CnEsIc0lQqMwEIFSGTZp8urv+CRonTbIseLJ9hBViCGrYkoOZJfSp0dBNgB23pK2RmR3cjd57Jy8bdRXOMKUHxolZS/O3dHSThAHyOADg/sGtDobh7Bflv0uzAlws0PgGgBJp7RT6zfQPbvYqK+nNzQmo8QVj7CJfoyGfDuEAqap7iDGWywUnm7m1icI2SGdZETvgNLqVCVqt2nSEAAPXgMiPesWnlEIbB99wRVPTyisWhy8CE+IX8kM/3b0qRuMmbMcyZ8yEazCCsbnKXJSEtdUko444SplQ1l7rXvKgHqEoybVvQ7fiAhpXfpkoMA1hd9iZ2FmpFTQIDAQAB"/>
+  <define name="JQUERY" value="/js/jquery-1.7.1.min.js"/>
+  <define name="JQUERY_UI_JS" value="/js/jquery-ui-1.8.18.custom.min.js"/>
+  <define name="JQUERY_UI_CSS" value="/css/redmond/jquery-ui-1.8.18.custom.css"/>
+  <define name="PORTALDB_DB" value="eu2"/>
+  <define name="PORTALDB_HOST" value="localhost"/>
+  <define name="PORTALDB_USER" value="eu_admin"/>
+  <define name="PORTALDB_PASS" value="12345678"/>
+  <define name="SITENAME" value="portal2"/>
+  <define name="CONTINGENT_V3_CONNECTION" value="dbname='contingent3' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="CLASSIFIERS_XML" value="http://dev.eu.bmstu.ru/ref/guide/service/xml/"/>
+  <define name="CURRENT_STRUCTURE_XML" value="http://dev.eu.bmstu.ru/ref/structure3/legacyservice/xml/current/"/>
+  <define name="CURRENT_STRUCTURE_NEW_XML" value="http://dev.eu.bmstu.ru/ref/structure3/service/xml/get/"/>
+  <define name="SESSION_SERVICE_XML" value="http://dev.eu.bmstu.ru/modules/session/service/xml/"/>
+  <define name="ORDERS_STORAGE" value="http://workflow3.dev.eu.bmstu.ru/exist/rest/db/orders/archived/"/>
+  <define name="GET_ORDER_BY_UUID" value="http://workflow3.dev.eu.bmstu.ru/exist/apps/search/order/"/>
+  <define name="CHECK_STUDENTS_IN_ORDER" value="http://workflow3.dev.eu.bmstu.ru/exist/apps/orders/external/check_students"/>
+  <define name="CONTINGENT_V3_SYS_USR_NAME" value="ADMIN"/>
+  <define name="CONTINGENT_DIR" value="/var/www/eu2/UserFiles/contingent"/>
+  <define name="CONTINGENT_V3_USE_CACHE" value="session"/>
+  <define name="SPECIALITIES3_SERVICE_XML" value="http://dev.eu.bmstu.ru/ref/specialities3/service/xml/"/>
+  <define name="MEMCACHED_SERVER" value="localhost"/>
+  <define name="MEMCACHED_PORT" value="11211"/>
+  <define name="KLADR_SERVICE_XML" value="http://dev.eu.bmstu.ru/ref/kladr/service/xml/"/>
+  <define name="ORDER_PRINT_VERSION_URL" value="http://workflow3.dev.eu.bmstu.ru/exist/apps/orders/document/get/"/>
+  <define name="GUIDE_CONNECTION" value="dbname='guide' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="XSD_GUIDE" value="/UserFiles/guide/Guide.xsd"/>
+  <define name="PLIB_CONNECTION" value="pgsql:host='ubuntup.dev.eu.bmstu.ru'; dbname='metodblock'; port='5432'; user='eu_admin'; password='12345678';"/>
+  <define name="STRUCTURE3_SERVICE_XML" value="http://dev.eu.bmstu.ru/ref/structure3/legacyservice/"/>
+  <define name="SPECIALITIES3_SERVICE" value="http://dev.eu.bmstu.ru/ref/specialities3/service/xml/"/>
+  <define name="STUFF2_XML" value="http://195.19.33.59:9877"/>
+  <define name="METODIST_REDMINE" value="http://metodist.bmstu.ru/"/>
+  <define name="GDOC_CONNECTION" value="dbname='gdoc' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="DISC_SERVICE" value="http://dev.eu.bmstu.ru/service/plan/plan.wsdl"/>
+  <define name="SPECIALITY_SERVICE_XML" value="http://dev.eu.bmstu.ru/ref/speciality/service/xml/"/>
+  <define name="UCHPLAN_CONNECTION" value="dbname='uchplan' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="PLIB_SERVICE_XML" value="http://dev.eu.bmstu.ru/ref/plib/service/xml/"/>
+  <define name="UCHPLAN_SPECIALITY_SERVICE_XML" value="https://dev.eu.bmstu.ru/ref/uchplan/service/xml/"/>
+  <define name="UCHPLAN_STRUCTURE_SERVICE_XML" value="https://dev.eu.bmstu.ru/ref/structure3/service/xml/"/>
+  <define name="REVIEW_CONNECTION" value="dbname='review' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="GLOBAL_STRUCTURE" value="http://dev.eu.bmstu.ru/ref/structure3/legacyservice/xml/current/"/>
+  <define name="GLOBAL_DATES" value="http://dev.eu.bmstu.ru/eu2/service/plan/dates.xml"/>
+  <define name="STUDENTS_XML" value="http://dev.eu.bmstu.ru/eu2/service/xml/students/"/>
+  <define name="PROGRESS_SERVICE" value="http://dev.eu.bmstu.ru/service/progress/progress.wsdl"/>
+  <define name="LECTURES_MISS_XML" value="http://dev.eu.bmstu.ru/service/xml/attendance/group/"/>
+  <define name="STANDART_CONNECTION" value="dbname='metod_block' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password=''"/>
+  <define name="ELDERS_CONNECTION" value="dbname='elders' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="PERSONS_XML" value="http://dev.eu.bmstu.ru/service/xml/persons/"/>
+  <define name="UCHPLAN_SERVICE" value="http://dev.eu.bmstu.ru/service/xml/get/"/>
+  <define name="ORDERS_EMPTY_SERVICE" value="http://wf4.dev.eu.bmstu.ru/orders/document/empty/xml/"/>
+  <define name="ORDERS_PRINT_PREVIEW_SERVICE" value="http://wf4.dev.eu.bmstu.ru/search/api/print"/>
+  <define name="ORDERS_REGISTER_SERVICE" value="http://wf4.dev.eu.bmstu.ru/orders/document/external/xml/"/>
+  <define name="ORDERS_STATUS_SERVICE" value="http://wf4.dev.eu.bmstu.ru/orders/document/status/xml/"/>
+  <define name="HEAD_UNIVERSITY_UUID" value="2c181c82-eda8-11e4-a199-005056aac112"/>
+  <define name="KLADR_SERVICE_JSON" value="&eu-host;/ref/kladr/service/json/"/>
+  <define name="CONTINGENT_INFO" value="http://dev.eu.bmstu.ru/modules/contingent3/info/"/>
+  <define name="FV_CONNECTION" value="dbname='fv' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="STRUCTURE_V3_FULL" value="http://dev.eu.bmstu.ru/ref/structure3/service/xml/get/year/"/>
+  <define name="FV_TIME_RESTRICT" value="1"/>
+  <define name="L4_CONNECTION" value="dbname='l4' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="INDIVIDUAL_PLAN_CONNECTION" value="dbname='individual' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="INDIVIDUAL_GC_TYPE" value="3"/>
+  <define name="INDIVIDUAL_PDO" value="pgsql:host='ubuntup.dev.eu.bmstu.ru';dbname='individual';port='5432';user='eu_admin';password='12345678'"/>
+  <define name="REFERENCE_CONNECTION" value="dbname='reference' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="ORDERS_XML" value="http://dev.eu.bmstu.ru/service/xml/orders/"/>
+  <define name="NULL_UUID" value="00000000-0000-0000-0000-000000000000"/>
+  <define name="MILITARY_COMMISSARIAT_XML" value="https://dev.eu.bmstu.ru/service/xml/military-commissariat/"/>
+  <define name="SPECIALITIES_XML" value="https://dev.eu.bmstu.ru/ref/specialities3/service/xml/full_list_old/"/>
+  <define name="REFERENCE_MILITARY_HEAD" value="______________"/>
+  <define name="REFERENCE_UNIVERSITY_HEAD" value="А. Александров"/>
+  <define name="ASSESSMENT_MILITARY_COMMISSARIAT" value="Отдел военного комиссариата г. Москвы по Измайловскому р-ну ВАО"/>
+  <define name="STRUCTURE_V3_CURRENT" value="http://dev.eu.bmstu.ru/service/xml/get/with_students/1/"/>
+  <define name="POSTGRADUATE_CONNECTION" value="dbname='postgraduate' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="LECTURE_CONNECTION" value="dbname='lecture' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="AUTHDB_NAME" value="auth"/>
+  <define name="LECTURE_STAT_MAX_COURSE" value="3"/>
+  <define name="MONITORING_RECTORAT_CONNECTION" value="dbname='monitoring_rectorat' host='&pg-host;' port='&pg-port;' user='&pg-user;'   password='&pg-password;'"/>
+<!-- #не нужно  <define name="ROOM_CONNECTION" value="dbname='room' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+#не нужно  <define name="ROOM_CLASSIFIERS" value="&#x421;&#x435;&#x440;&#x432;&#x438;&#x441; &#x43E;&#x431;&#x449;&#x435;&#x433;&#x43E; &#x441;&#x43F;&#x440;&#x430;&#x432;&#x43E;&#x447;&#x43D;&#x438;&#x43A;&#x430; &#x441; &#x43C;&#x435;&#x442;&#x43E;&#x434;&#x430;&#x43C;&#x438; (method[]=...) equipment, room-type, bmstu-address, bmstu-floor"/>
+#не нужно  <define name="HR_FTP_HOST" value="195.19.33.108"/>
+#не нужно  <define name="HR_FTP_PORT" value="21"/>
+#не нужно  <define name="HR_FTP_LOGIN" value="&#x41B;&#x43E;&#x433;&#x438;&#x43D; ftp-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440;&#x430; &#x441; &#x441;&#x43E;&#x442;&#x440;&#x443;&#x434;&#x43D;&#x438;&#x43A;&#x430;&#x43C;&#x438; &#x438; &#x441;&#x442;&#x440;&#x443;&#x43A;&#x442;&#x443;&#x440;&#x43E;&#x439;"/>
+#не нужно  <define name="HR_FTP_PASS" value="&#x41F;&#x430;&#x440;&#x43E;&#x43B;&#x44C; ftp-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440;&#x430; &#x441; &#x441;&#x43E;&#x442;&#x440;&#x443;&#x434;&#x43D;&#x438;&#x43A;&#x430;&#x43C;&#x438; &#x438; &#x441;&#x442;&#x440;&#x443;&#x43A;&#x442;&#x443;&#x440;&#x43E;&#x439;"/>
+#не нужно  <define name="HR_STORAGE_DIR" value="&#x414;&#x438;&#x440;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x438;&#x44F;-&#x445;&#x440;&#x430;&#x43D;&#x438;&#x43B;&#x438;&#x449;&#x435; &#x43D;&#x430; ftp-&#x441;&#x435;&#x440;&#x432;&#x435;&#x440;&#x435; &#x441; &#x441;&#x43E;&#x442;&#x440;&#x443;&#x434;&#x43D;&#x438;&#x43A;&#x430;&#x43C;&#x438; &#x438; &#x441;&#x442;&#x440;&#x443;&#x43A;&#x442;&#x443;&#x440;&#x43E;&#x439;"/>
+#не нужно  <define name="HR_EMPLOYEES_FILE" value="persons.xml"/>
+#не нужно  <define name="HR_STRUCTURE_FILE" value="struct.xml"/> -->
+  <define name="MILITARY_CHOICE_CONNECTION" value="dbname='military_choice' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='ey_admin'   password='12345678'"/>
+  <define name="FOP_CONFIG" value="/var/www/eu2/admin/fop.xconf"/>
+  <define name="MILITARYREG_SERVICE_XML" value="https://dev.eu.bmstu.ru/modules/militaryreg/service/xml/"/>
+  <define name="CONTINGENT_V3_INFO" value="https://dev.eu.bmstu.ru/modules/contingent3/info/"/>
+  <define name="OLYMPIC_SHORT_CONNECTION" value="dbname='olympic_short' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="PHONEBOOK_CONNECTION" value="dbname='phonebook' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="PHONEBOOK_CLASSIFIERS" value="https://dev.eu.bmstu.ru/ref/guide/service/xml/contact/"/>
+  <define name="PHONEBOOK_URL" value="http://dev.eu.bmstu.ru/index/phonebook/"/>
+<!-- #не нужно  <define name="ROOM_XML" value="http(s)://{href-to-room}/service/xml/"/> -->
+  <define name="PRACTICE_CONNECTION" value="dbname='practice' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="STUFF_XML" value="http://195.19.33.59:9876/"/>
+  <define name="PRINT_DIPLOM_CONNECTION" value="dbname='print_diplom' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="PRINT_DIPLOM_PDO" value="pgsql:host='ubuntup.dev.eu.bmstu.ru';dbname='print_diplom';port='5432';user='eu_admin';password='12345678'"/>
+  <define name="PLAN_SERVICE_CONNECTION_1_0" value="pgsql:host='ubuntup.dev.eu.bmstu.ru';dbname='plan';port='5432';user='eu_admin';password='12345678'"/>
+  <define name="SESSION_SETTINGS_XML" value="https://dev.eu.bmstu.ru/modules/session/service/xml/"/>
+  <define name="PRINT_DIPLOM_CLASSIFIERS" value="http://dev.eu.bmstu.ru/service/xml/?method[]"/>
+  <define name="MARKS_SERVICE" value="http://dev.eu.bmstu.ru/modules/session/service/xml/student-marks/"/>
+  <define name="RASPVED_CONNECTION" value="dbname='raspved' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="RASP_LOAD_URL" value="http://dev.eu.bmstu.ru/rasp/"/>
+  <define name="EXIST_STUDENTCARD_SUBURL" value="studentcard/documents/cards/"/>
+  <define name="EXIST_STUDENTCARD_CHANGES_SUBURL" value="studentcard/documents/changes/"/>
+  <define name="STUDENTCARD_EXIST_LOGIN" value="admin"/>
+  <define name="STUDENTCARD_EXIST_PASSWORD" value="exist123"/>
+  <define name="EXIST_STUDENTCARD_URL" value="http://exist.dev.eu.bmstu.ru:8080/exist/rest/db/studentcard/documents/cards/"/>
+  <define name="EXIST_STUDENTCARD_CHANGES_URL" value="http://exist.dev.eu.bmstu.ru:8080/exist/rest/db/studentcard/documents/changes/"/>
+  <define name="JOURNAL_TEACHER_CONNECTION" value="dbname='journal_teacher' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="PPS_CONNECTION" value="pgsql:host='ubuntup.dev.eu.bmstu.ru'; dbname='pps'; port='5432'"/>
+  <define name="PPS_DB_USER" value="eu_admin"/>
+  <define name="PPS_DB_PASSWORD" value="12345678"/>
+  <define name="POSTGRADUATE_SERVICE" value="https://dev.eu.bmstu.ru/modules/postgraduate/service/xml/"/>
+  <define name="PPS_CLOSE_DATE" value="12-03-2018 19:00"/>
+  <define name="DIPLOM_CONNECTION" value="dbname='diplom' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="DIPLOM_USE_CACHE" value="memcached"/>
+  <define name="PROGRESS_CONNECTION" value="dbname='progress' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="DATES_XML" value="http://dev.eu.bmstu.ru/service/plan/dates.xml"/>
+  <define name="SESSION_CONNECTION" value="dbname='session' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="STRUCTURE_V3" value="http://dev.eu.bmstu.ru/ref/structure3/service/xml/get/"/>
+  <define name="PROGRESS_JSON" value="&eu-host;/modules/progress3/service/json/progress/"/>
+  <define name="STUDENTCARD_XML" value="https://dev.eu.bmstu.ru/modules/studentcard/service/xml/"/>
+  <define name="INDIVIDUAL_PLAN_XML" value="http://dev.eu.bmstu.ru/service/xml/students/"/>
+  <define name="SESSION_GC_TYPE" value="3"/>
+  <define name="SESSION_EXIST_STORAGE" value="http://exist.dev.eu.bmstu.ru:8080/exist/rest"/>
+  <define name="SESSION_EXIST_ADMIN_URL" value="http://exist.dev.eu.bmstu.ru:8080/exist/services/Admin?wsdl"/>
+  <define name="SESSION_EXIST_LOGIN" value="admin"/>
+  <define name="SESSION_EXIST_PASSWORD" value="exist123"/>
+  <define name="SESSION_DOCUMENT_COLLECTION" value="/db/session/documents"/>
+  <define name="ACADEMIC_REFERENCE_COLLECTION" value="/db/academic-reference/documents"/>
+  <define name="DISCIPLINE_GROUP_XML" value="http://dev.eu.bmstu.ru/service/xml/disciplinegroup/"/>
+  <define name="ACADEMIC_REFERENCE_PDF" value="http://exist.dev.eu.bmstu.ru:8080/exist/rest/pdfGenerator/getPDF.xql?xsl-uri=/db/academic-reference/transformations/reference.fo.xsl&amp;xml-uri="/>
+  <define name="SESSION_GET_DOCUMENTS" value="http://exist.eu.bmstu.ru/exist/rest/db/session/docs.xql"/>
+  <define name="PDF_GENERATOR" value="http://exist.dev.eu.bmstu.ru:8080/exist/rest/pdfGenerator/g"/>
+  <define name="SPECIALITIES3_CONNECTION" value="dbname='contingent3' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="STRUCTURE3_CONNECTION" value="dbname='contingent3' host='ubuntup.dev.eu.bmstu.ru' port='5432' user='eu_admin'   password='12345678'"/>
+  <define name="STRUCTURE_CONNECTION" value=""/>
+  <define name="GLOBAL_STRUCTURE_FILE" value="/var/www/eu2/UserFiles/structure.xml"/>
+</settings>
+
