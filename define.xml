@@ -8,7 +8,7 @@
 <!ENTITY pg-user "eu_user">
 <!ENTITY pg-password "">
 ]>
-<settings>
+<settings>qq
   <define name="PORTALDB_USER" value="MySQL_Admin"/>
   <define name="PORTALDB_PASS" value=""/>
   <define name="PORTALDB_HOST" value="localhost"/>
